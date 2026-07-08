@@ -57,7 +57,7 @@ class CameraController(
             // Continuous autofocus with a macro-leaning metering point matters
             // a lot here — odometers are typically read from 20-40cm away.
             camera?.cameraControl?.enableTorch(false)
-        }, ContextCompat.getExecutor(context))
+        }, ContextCompat.getMainExecutor(context))
     }
 
     private fun throttledAnalyze(imageProxy: ImageProxy, onFrame: (Bitmap) -> Unit) {
