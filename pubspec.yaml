@@ -1,0 +1,27 @@
+name: odometer_sdk
+description: Advanced odometer capture SDK — CameraX + TFLite detection + ML Kit OCR with multi-frame temporal fusion and confidence scoring.
+version: 1.0.0
+homepage: https://github.com/YOUR_ORG/odometer_sdk
+repository: https://github.com/YOUR_ORG/odometer_sdk
+issue_tracker: https://github.com/YOUR_ORG/odometer_sdk/issues
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.13.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.odometersdk
+        pluginClass: OdometerSdkPlugin

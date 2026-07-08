@@ -1,0 +1,25 @@
+# Flutter/Dart
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+pubspec.lock
+
+# Android
+android/.gradle/
+android/local.properties
+android/*.iml
+*.jks
+*.keystore
+
+# Model asset (large binary — see README; supply your own)
+android/src/main/assets/*.tflite
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# macOS
+.DS_Store
